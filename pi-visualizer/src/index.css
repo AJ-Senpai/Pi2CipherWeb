@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-academic-bg: #ffffff;
+  --color-academic-text: #111111;
+  --color-academic-accent: #2563eb; /* Subdued blue for links */
+  --color-academic-border: #e2e8f0;
+  
+  --font-serif: "Georgia", "Times New Roman", Times, serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: var(--color-academic-bg);
+  color: var(--color-academic-text);
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* academic paper styling utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: bold;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  background-color: #f8fafc;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.paper-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
